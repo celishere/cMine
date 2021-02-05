@@ -39,7 +39,5 @@ class Task extends PMTask {
 		Server::getInstance()->getDefaultLevel()->setBlock($block, $block);
 
 		unset(Main::getInstance()->inQueue[$this->i]);
-
-		var_dump(Main::getInstance()->inQueue);
     }
 }

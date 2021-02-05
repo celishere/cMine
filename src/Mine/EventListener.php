@@ -6,8 +6,8 @@ namespace Mine;
 
 use pocketmine\block\Block;
 
-use pocketmine\event\block\BlockPlaceEvent;
 use pocketmine\event\Listener;
+use pocketmine\event\block\BlockPlaceEvent;
 use pocketmine\event\block\BlockBreakEvent;
 
 use pocketmine\item\Item;

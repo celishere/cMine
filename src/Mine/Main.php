@@ -6,6 +6,7 @@ namespace Mine;
 
 use pocketmine\block\Block;
 use pocketmine\plugin\PluginBase;
+
 use pocketmine\Server;
 
 /**
@@ -21,6 +22,7 @@ class Main extends PluginBase {
 
 	public array $blocks;
 	public array $places;
+
 	/** @var Block[] */
 	public array $inQueue = [];
 
