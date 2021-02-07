@@ -46,7 +46,13 @@ class EventListener implements Listener {
 				}
 
 				if ($block->getId() !== Block::REDSTONE_BLOCK) {
-					Server::getInstance()->getDefaultLevel()->dropItem($block->add(0.5, 1, 0.5), Item::get($block->getId()));
+				    $id = $block->getId();
+
+				    if ($id === Block::LIT_REDSTONE_ORE) {
+				        $id = Block::REDSTONE_ORE;
+                    }
+
+					Server::getInstance()->getDefaultLevel()->dropItem($block->add(0.5, 0.5, 0.5), Item::get($id));
 					Main::getInstance()->getScheduler()->scheduleDelayedTask(new Task($block), 20 * 7);
 
 					Server::getInstance()->getDefaultLevel()->setBlock($block, Block::get(Block::REDSTONE_BLOCK, 0, $block));
