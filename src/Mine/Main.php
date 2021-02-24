@@ -27,7 +27,7 @@ class Main extends PluginBase {
 	public array $inQueue = [];
 
 	public function onLoad(): void {
-		self::setInstance($this);
+        self::$instance = $this;
 
 		$blocksArray = $this->getConfig()->get('blocks');
 		$placesArray = $this->getConfig()->get('places');
