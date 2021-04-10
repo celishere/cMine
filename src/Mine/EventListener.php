@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Mine;
 
-use pocketmine\block\Block;
-
 use pocketmine\event\Listener;
 use pocketmine\event\block\BlockPlaceEvent;
 use pocketmine\event\block\BlockBreakEvent;
+
+use pocketmine\block\Block;
 
 use pocketmine\item\Item;
 

@@ -33,6 +33,9 @@ class Task extends PMTask {
 		Main::getInstance()->inQueue[$this->i] = $block;
 	}
 
+    /**
+     * @param int $currentTick
+     */
 	public function onRun(int $currentTick): void {
 		$block = $this->block;
 

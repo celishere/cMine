@@ -54,13 +54,6 @@ class Main extends PluginBase {
 	}
 
 	/**
-	 * @param Main $instance
-	 */
-	private static function setInstance(Main $instance): void {
-		self::$instance = $instance;
-	}
-
-	/**
 	 * @return Main
 	 */
 	public static function getInstance(): Main {
